@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans";
+  list-style-type: none;
+}
+
+body {
+  background-color: #19a1ae;
+  overflow: hidden;
+}
+.bg-pattern-top {
+  position: absolute;
+  top: -45%;
+  right: 45%;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  z-index: -1;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 326px;
+  height: 374px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+}
+
+.card__headerbg {
+  height: 140px;
+  width: 326px;
+  background: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0 0;
+}
+
+.card__img {
+  border-radius: 48px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 96px;
+  margin: auto;
+  border: 5px solid #fff;
+}
+
+.card__info {
+  position: relative;
+  top: -33px;
+}
+
+.card__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #2e3349;
+  margin: 0 auto 8px;
+}
+
+.card__age {
+  font-weight: normal;
+  color: #6b7082;
+}
+
+.card__city {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #6b7082;
+}
+
+.card__line {
+  height: 1px;
+  width: 326px;
+  background: #e8e9ec;
+}
+
+.card__list {
+  width: 233px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 24px auto;
+}
+
+.list__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #2e3349;
+  margin: 0 auto 9px;
+}
+
+.list__info {
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+}
+
+.attribution {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+
+  .card__headerbg {
+    width: 350px;
+  }
+
+  .card__line {
+    width: 350px;
+  }
+
+  .bg-pattern-top {
+    top: -40%;
+    right: 50%;
+  }
+
+  .bg-pattern-bottom {
+    top: 55%;
+    left: 45%;
+    z-index: -1;
+  }
+}
